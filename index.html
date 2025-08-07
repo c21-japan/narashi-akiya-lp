@@ -1,0 +1,695 @@
+        /* CTAセクション */
+        .form-section {
+            padding: 80px 0;
+            background: #228B22;
+            color: white;
+        }<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奈良市の空き家売却｜家バトンプロジェクト｜センチュリー21ホームマート</title>
+    <meta name="description" content="奈良市の空き家を若い家族につなげる「家バトン」プロジェクト。あなたの空き家が次世代の夢のマイホームに生まれ変わります。無料査定で社会貢献しませんか？">
+    <meta name="keywords" content="奈良市,空き家売却,不動産,社会貢献,SDGs,センチュリー21">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: linear-gradient(135deg, #228B22, #32CD32);
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .phone {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFD700;
+        }
+        
+        /* ヒーローセクション */
+        .hero {
+            background: linear-gradient(135deg, rgba(34, 139, 34, 0.9), rgba(50, 205, 50, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2398FB98" width="1200" height="600"/><path fill="%23228B22" opacity="0.1" d="M0,100 Q300,50 600,100 T1200,100 V600 H0 Z"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 120px 0 80px;
+            margin-top: 60px;
+        }
+        
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #E6FFE6;
+        }
+        
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.9);
+            color: #228B22;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        
+        .cta-primary {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #228B22;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* 問題共感セクション */
+        .problems {
+            padding: 80px 0;
+            background: #f9f9f9;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #228B22;
+            margin-bottom: 50px;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .problem-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .problem-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .problem-card h3 {
+            color: #228B22;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        /* 解決提案セクション */
+        .solution {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #E6FFE6, #F0FFF0);
+        }
+        
+        .solution-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .solution-text h2 {
+            color: #228B22;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .solution-steps {
+            list-style: none;
+        }
+        
+        .solution-steps li {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #228B22;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .solution-steps .step-number {
+            background: #228B22;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: 700;
+        }
+        
+        /* 社会価値セクション */
+        .social-value {
+            padding: 80px 0;
+            background: #228B22;
+            color: white;
+            text-align: center;
+        }
+        
+        .social-value h2 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        
+        .sdgs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .sdg-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .sdg-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        /* リノベーション事例 */
+        .renovation {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .renovation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .renovation-card {
+            background: #f9f9f9;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .renovation-image {
+            height: 200px;
+            background: linear-gradient(45deg, #98FB98, #228B22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .renovation-content {
+            padding: 30px;
+        }
+        
+        .renovation-content h3 {
+            color: #228B22;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        /* 税制メリット */
+        .tax-benefits {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #F0FFF0, #E6FFE6);
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #228B22;
+        }
+        
+        .benefit-amount {
+            font-size: 2rem;
+            color: #228B22;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+
+        
+        /* フッター */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        /* レスポンシブ調整 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+            
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .problems, .solution, .social-value, .renovation, .tax-benefits, .form-section {
+                padding: 60px 0;
+            }
+        }
+        
+        /* アニメーション */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* アクセシビリティ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* 高コントラスト対応 */
+        @media (prefers-contrast: high) {
+            .cta-primary {
+                border: 2px solid #000;
+            }
+            
+            .problem-card, .benefit-card, .renovation-card {
+                border: 1px solid #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">センチュリー21ホームマート</div>
+                <div class="phone">📞 0120-43-8639</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">奈良市限定プロジェクト</div>
+            <h1>あなたの空き家が、<br>若い家族の夢のマイホームになります</h1>
+            <p class="subtitle">奈良市の空き家を新家族につなげる「家バトン」プロジェクト</p>
+            <a href="#form" class="cta-primary">我が家を次の家族にバトンタッチする（無料査定）</a>
+        </div>
+    </section>
+
+    <!-- 問題共感セクション -->
+    <section class="problems">
+        <div class="container">
+            <h2 class="section-title">空き家管理、こんなお悩みありませんか？</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="icon">💸</div>
+                    <h3>固定資産税の負担</h3>
+                    <p>年間数十万円の固定資産税や都市計画税が家計を圧迫。使わない家にお金を払い続けるのはもったいない...</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">🏚️</div>
+                    <h3>建物の劣化進行</h3>
+                    <p>人が住まない家は急速に傷みます。雨漏り、シロアリ、カビなど修繕費がかさむ前に対処が必要です。</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">😰</div>
+                    <h3>管理の精神的負担</h3>
+                    <p>定期的な換気、草刈り、近隣への配慮など、遠方からの管理は想像以上にストレスが溜まるもの。</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">⚖️</div>
+                    <h3>相続問題の複雑化</h3>
+                    <p>時間が経つほど相続関係者が増え、売却時の合意形成が困難に。早めの対応が肝心です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解決提案セクション -->
+    <section class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2>「家バトン」プロジェクトが<br>すべて解決します</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">あなたの空き家を、奈良市で新生活を始めたい若い家族につなげる社会貢献プロジェクトです。</p>
+                    <ol class="solution-steps">
+                        <li>
+                            <span class="step-number">1</span>
+                            <div>
+                                <strong>無料査定・相談</strong><br>
+                                奈良市の地域相場を熟知した専門スタッフが現地調査
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <div>
+                                <strong>リノベーション提案</strong><br>
+                                最小投資で価値を最大化する改修プランをご提案
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <div>
+                                <strong>購入希望者マッチング</strong><br>
+                                奈良市限定の買主データベースから最適な家族を選定
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">4</span>
+                            <div>
+                                <strong>バトンタッチ成立</strong><br>
+                                新家族への引き渡しで地域活性化に貢献完了
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="solution-image" style="background: linear-gradient(45deg, #98FB98, #228B22); height: 400px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
+                    🏠➡️👨‍👩‍👧‍👦<br>家族の幸せをつなぐ
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社会価値セクション -->
+    <section class="social-value">
+        <div class="container">
+            <h2>あなたの空き家売却が社会に与える価値</h2>
+            <div class="sdgs-grid">
+                <div class="sdg-card">
+                    <div class="icon">🌱</div>
+                    <h3>環境保護への貢献</h3>
+                    <p>空き家の有効活用により、新築需要を抑制し環境負荷を軽減。SDGs目標12「つくる責任 つかう責任」に貢献します。</p>
+                </div>
+                <div class="sdg-card">
+                    <div class="icon">🏘️</div>
+                    <h3>地域活性化</h3>
+                    <p>新しい家族の移住により、奈良市の人口維持と商業活動の活性化に直接貢献。地域経済の循環を促進します。</p>
+                </div>
+                <div class="sdg-card">
+                    <div class="icon">👶</div>
+                    <h3>次世代への投資</h3>
+                    <p>子育て世代に良質な住環境を提供することで、奈良市の未来への投資となり、持続可能なまちづくりを支援します。</p>
+                </div>
+                <div class="sdg-card">
+                    <div class="icon">🤝</div>
+                    <h3>コミュニティ再生</h3>
+                    <p>空き家の解消により防犯面が改善され、近隣住民の生活の質向上と地域コミュニティの結束強化を実現します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- リノベーション事例 -->
+    <section class="renovation">
+        <div class="container">
+            <h2 class="section-title">空き家が生まれ変わった成功事例</h2>
+            <div class="renovation-grid">
+                <div class="renovation-card">
+                    <div class="renovation-image">築35年 Before → After</div>
+                    <div class="renovation-content">
+                        <h3>奈良市三吉 古民家再生</h3>
+                        <p><strong>投資額：280万円</strong></p>
+                        <p>水回りリフォームと畳の張替えで、若い夫婦が理想の和モダン住宅として購入。売却価格は投資額を大きく上回りました。</p>
+                        <blockquote style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic;">
+                            "こんな素敵な家に住めて本当に幸せです！"<br>
+                            <small>- 購入者Aさんご夫婦 -</small>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="renovation-card">
+                    <div class="renovation-image">築28年 Before → After</div>
+                    <div class="renovation-content">
+                        <h3>奈良市大場 ファミリー向け改修</h3>
+                        <p><strong>投資額：350万円</strong></p>
+                        <p>キッチンと浴室を一新、子供部屋を2室に分割。3人家族が「理想の間取り」として即決購入されました。</p>
+                        <blockquote style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic;">
+                            "子どもたちが毎日楽しそうに過ごしています！"<br>
+                            <small>- 購入者Bさんファミリー -</small>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="renovation-card">
+                    <div class="renovation-image">築42年 Before → After</div>
+                    <div class="renovation-content">
+                        <h3>奈良市南郷 シニア向けリノベ</h3>
+                        <p><strong>投資額：450万円</strong></p>
+                        <p>バリアフリー化と断熱材追加で、定年退職後のご夫婦が「終の住処」として選択。光熱費削減効果も好評です。</p>
+                        <blockquote style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic;">
+                            "老後も安心して暮らせる家になりました！"<br>
+                            <small>- 購入者Cさんご夫婦 -</small>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 税制メリット -->
+    <section class="tax-benefits">
+        <div class="container">
+            <h2 class="section-title">売却で得られる税制優遇メリット</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <div class="benefit-amount">最大3,000万円</div>
+                    <h3>空き家特別控除</h3>
+                    <p>相続した空き家を売却する場合、譲渡所得から最大3,000万円の特別控除が適用されます。大幅な税負担軽減が可能です。</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-amount">年間数十万円</div>
+                    <h3>固定資産税からの解放</h3>
+                    <p>売却完了と同時に固定資産税・都市計画税の支払い義務が終了。年間コストが完全にゼロになります。</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-amount">数百万円規模</div>
+                    <h3>維持管理費の削減</h3>
+                    <p>草刈り、修繕、保険料などの年間維持費が不要に。10年間で考えると数百万円規模の節約効果があります。</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-amount">手数料0円</div>
+                    <h3>査定・相談完全無料</h3>
+                    <p>「家バトン」プロジェクトの査定・相談は完全無料。売却が成立するまで一切の費用はかかりません。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フォームセクション -->
+    <section class="form-section" id="form">
+        <div class="container">
+            <h2 class="section-title" style="color: white; margin-bottom: 30px;">我が家を次の家族にバトンタッチ<br>無料査定お申し込み</h2>
+            <div style="text-align: center;">
+                <div style="background: white; padding: 40px; border-radius: 15px; max-width: 600px; margin: 0 auto;">
+                    <h3 style="color: #228B22; font-size: 1.5rem; margin-bottom: 20px; font-weight: 700;">
+                        🏠 空き家の未来を変える第一歩
+                    </h3>
+                    <p style="color: #666; margin-bottom: 30px; line-height: 1.6;">
+                        奈良市の空き家を次世代につなげる「家バトン」プロジェクト。<br>
+                        わずか2分で完了する無料査定で、あなたの空き家の可能性を発見しませんか？
+                    </p>
+                    
+                    <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+                        <p style="color: #228B22; font-weight: 700; margin-bottom: 10px;">📋 査定で分かること</p>
+                        <ul style="text-align: left; color: #666; line-height: 1.6;">
+                            <li>現在の市場価値と売却予想額</li>
+                            <li>リノベーション投資プランと効果</li>
+                            <li>税制優遇の適用可能性</li>
+                            <li>最適な購入者マッチング戦略</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://form.run/@century21top" target="_blank" rel="noopener noreferrer" class="cta-primary" style="display: inline-block; width: 100%; max-width: 400px; padding: 18px; font-size: 1.2rem; text-decoration: none; margin-bottom: 20px;">
+                        🏠 無料査定を申し込む（24時間受付）
+                    </a>
+                    
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">
+                        ※外部の安全なフォームページが開きます
+                    </p>
+                    
+                    <div style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">
+                            📞 <strong style="color: #228B22; font-size: 1.1rem;">0120-43-8639</strong><br>
+                            査定結果は2営業日以内にご連絡いたします<br>
+                            お急ぎの方はお電話でも承ります
+                        </p>
+                    </div>
+                    
+                    <div style="background: #E6FFE6; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                        <p style="color: #228B22; font-weight: 500; font-size: 0.9rem;">
+                            🔒 個人情報は査定・ご提案のみに使用<br>
+                            SSL暗号化により安全に送信されます
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>センチュリー21ホームマート</h3>
+                    <p>奈良市家バトンプロジェクト運営</p>
+                    <p>📞 0120-43-8639</p>
+                </div>
+                <div>
+                    <h3>対応エリア</h3>
+                    <p>奈良市全域<br>
+                    三吉・大場・南郷・笠・寺戸<br>
+                    弁財天・古寺・萱野・平尾</p>
+                </div>
+                <div>
+                    <h3>営業時間</h3>
+                    <p>平日・土日祝: 9:00-22:00<br>
+                    年中無休</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #555; padding-top: 20px; text-align: center;">
+                <p>&copy; 2025 Century21 HomeMart. All rights reserved. | 家バトンプロジェクト</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+
+        // アニメーション（Intersection Observer）
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // 観察対象要素の設定
+        document.querySelectorAll('.problem-card, .solution-steps, .sdg-card, .renovation-card, .benefit-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
